@@ -62,7 +62,7 @@ const DesktopNav = () => {
             rel="noopener noreferrer"
             className="px-2 py-2 text-sm bg-primary text-white rounded-md font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
-            Register for AMSA 2026 Conference
+            AMSA 2026 Recap
           </a>
         </div>
       </div>

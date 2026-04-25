@@ -80,7 +80,7 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
             rel="noopener noreferrer"
             className="px-5 py-2 text-center bg-white rounded-lg font-semibold"
           >
-            Register for AMSA 2026 Conference
+            AMSA 2026 Recap
           </a>
         </ul>
       </div>
