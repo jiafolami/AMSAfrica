@@ -56,14 +56,12 @@ const DesktopNav = () => {
         </ul>
 
         <div className="ml-auto">
-          <a
-            href="https://www.amsafricaconference.org"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/gallery"
             className="px-2 py-2 text-sm bg-primary text-white rounded-md font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
             AMSA 2026 Recap
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

@@ -74,14 +74,13 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
             );
           })}
 
-          <a
-            href="https://www.amsafricaconference.org"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/gallery"
             className="px-5 py-2 text-center bg-white rounded-lg font-semibold"
+            onClick={() => setIsMenuOpen(false)}
           >
             AMSA 2026 Recap
-          </a>
+          </Link>
         </ul>
       </div>
     </nav>
