@@ -60,7 +60,7 @@ const DesktopNav = () => {
             href="/gallery"
             className="px-2 py-2 text-sm bg-primary text-white rounded-md font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
-            AMSA 2026 Recap
+            AMSA 2026 Highlights
           </Link>
         </div>
       </div>

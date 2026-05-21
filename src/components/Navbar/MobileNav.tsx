@@ -79,7 +79,7 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
             className="px-5 py-2 text-center bg-white rounded-lg font-semibold"
             onClick={() => setIsMenuOpen(false)}
           >
-            AMSA 2026 Recap
+            AMSA 2026 Highlights
           </Link>
         </ul>
       </div>
