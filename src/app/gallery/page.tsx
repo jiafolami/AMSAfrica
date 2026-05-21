@@ -29,7 +29,7 @@ const GalleryPage = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-primary to-primary/80 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">AMSA 2026 Recap</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">AMSA 2026 Highlights</h1>
           <p className="text-lg text-gray-100 max-w-3xl">
             Highlights of the AMSA 2026 Conference
           </p>
