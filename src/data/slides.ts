@@ -41,4 +41,14 @@ export const slides: Slide[] = [
     type: "image",
     src: "/images/amcoa-april-2025.jpg",
   },
+  {
+    type: "image",
+    src: "/images/amsa4.jpg",
+    alt: "AMSA Africa event photo 4",
+  },
+  {
+    type: "image",
+    src: "/images/amsa5.jpg",
+    alt: "AMSA Africa event photo 5",
+  },
 ];
