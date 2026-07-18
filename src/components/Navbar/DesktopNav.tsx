@@ -95,7 +95,7 @@ const DesktopNav = () => {
                       showChildren
                         ? "visible opacity-100"
                         : "invisible opacity-0"
-                    } z-50`
+                    } z-50`}
                     style={{ zIndex: 9999 }}
                   >
                     {link.children.map((child) => {
