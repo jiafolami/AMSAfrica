@@ -28,12 +28,6 @@ export type Slide =
 export const slides: Slide[] = [
   {
     type: "image",
-    src: "/images/AMSA_Excos2.jpg",
-    alt: "AMSA Excos",
-    objectPosition: "center top",
-  },
-  {
-    type: "image",
     src: "/images/AMSA6.jpg",
     alt: "AMSA Africa event photo 6",
   },
@@ -62,6 +56,12 @@ export const slides: Slide[] = [
     type: "image",
     src: "/images/amsa5.jpg",
     alt: "AMSA Africa event photo 5",
+  },
+  {
+    type: "image",
+    src: "/images/AMSA_Excos2.jpg",
+    alt: "AMSA Excos",
+    objectPosition: "center top",
   },
   {
     type: "image",
