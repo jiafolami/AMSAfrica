@@ -28,7 +28,7 @@ const DesktopNav = () => {
     <nav
       role="navigation"
       aria-label="Utility"
-      className="h-20 bg-white backdrop-blur-md"
+      className="h-20 bg-white backdrop-blur-md relative z-50"
     >
       <div className="max-w-7xl mx-auto relative flex items-center h-full">
         <div className="flex items-center">
@@ -95,7 +95,8 @@ const DesktopNav = () => {
                       showChildren
                         ? "visible opacity-100"
                         : "invisible opacity-0"
-                    } z-50`}
+                    } z-50`
+                    style={{ zIndex: 9999 }}
                   >
                     {link.children.map((child) => {
                       const isChildActive = pathname === child.path;
