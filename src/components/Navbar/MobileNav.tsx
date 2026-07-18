@@ -1,9 +1,10 @@
 "use client";
 
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { useState } from "react";
 
 type MobileNavProps = {
   isMenuOpen: boolean;
@@ -12,6 +13,7 @@ type MobileNavProps = {
 
 const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
   const pathname = usePathname();
+  const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -64,20 +66,50 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
             const isActive =
               pathname === link.path ||
               (link.path !== "/" && pathname.startsWith(link.path));
+            const isExpanded =
+              expandedMenu === link.path ||
+              (link.children && pathname.startsWith(link.path));
 
             return (
               <li key={link.path} className="w-full">
-                <Link
-                  href={link.path}
-                  className={`text-white font-montserrat text-2xl transition-colors ${
-                    isActive ? "text-white font-semibold" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-                {link.children && (
-                  <ul className="mt-3 space-y-3 pl-4 border-l border-white/30">
+                <div className="flex items-center justify-between w-full">
+                  <Link
+                    href={link.path}
+                    className={`text-white font-montserrat text-2xl transition-colors ${
+                      isActive ? "text-white font-semibold" : ""
+                    }`}
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      setExpandedMenu(null);
+                    }}
+                  >
+                    {link.name}
+                  </Link>
+                  {link.children && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setExpandedMenu((current) =>
+                          current === link.path ? null : link.path
+                        )
+                      }
+                      className="text-white"
+                      aria-expanded={isExpanded}
+                      aria-controls={`${link.name.toLowerCase()}-submenu-mobile`}
+                    >
+                      <ChevronDown
+                        className={`w-5 h-5 transition-transform ${
+                          isExpanded ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                  )}
+                </div>
+                {link.children && isExpanded && (
+                  <ul
+                    id={`${link.name.toLowerCase()}-submenu-mobile`}
+                    className="mt-3 space-y-3 pl-4 border-l border-white/30"
+                  >
                     {link.children.map((child) => (
                       <li key={child.path}>
                         <Link

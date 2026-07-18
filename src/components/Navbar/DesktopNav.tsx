@@ -3,9 +3,13 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const DesktopNav = () => {
   const pathname = usePathname();
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
   const navLinks = [
     { name: "Home", path: "/" },
     {
@@ -19,6 +23,7 @@ const DesktopNav = () => {
     { name: "Team", path: "/team" },
     { name: "Contact", path: "/contact" },
   ];
+
   return (
     <nav
       role="navigation"
@@ -42,22 +47,56 @@ const DesktopNav = () => {
             const isActive =
               pathname === link.path ||
               (link.path !== "/" && pathname.startsWith(link.path));
+            const hasChildren = !!link.children;
+            const isOpen = openDropdown === link.path;
+            const showChildren = hasChildren && (isOpen || pathname.startsWith(link.path));
 
             return (
-              <li key={link.path} className="relative group">
-                <Link
-                  href={link.path}
-                  className={`relative font-montserrat transition-colors ${
-                    isActive
-                      ? "text-primary font-semibold"
-                      : "text-gray-700 hover:text-primary"
-                  } after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:bg-primary after:w-0 after:transition-all after:duration-300 hover:after:w-full 
-                  ${isActive ? "after:w-full" : ""}`}
-                >
-                  {link.name}
-                </Link>
-                {link.children && (
-                  <ul className="absolute left-0 top-full mt-2 hidden min-w-[160px] rounded-lg bg-white shadow-lg border border-slate-200 group-hover:block">
+              <li
+                key={link.path}
+                className="relative"
+                onMouseEnter={() => hasChildren && setOpenDropdown(link.path)}
+                onMouseLeave={() => hasChildren && setOpenDropdown(null)}
+              >
+                <div className="flex items-center gap-2">
+                  <Link
+                    href={link.path}
+                    className={`relative font-montserrat transition-colors ${
+                      isActive
+                        ? "text-primary font-semibold"
+                        : "text-gray-700 hover:text-primary"
+                    } after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:bg-primary after:w-0 after:transition-all after:duration-300 hover:after:w-full ${
+                      isActive ? "after:w-full" : ""
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                  {hasChildren && (
+                    <button
+                      type="button"
+                      aria-expanded={isOpen}
+                      aria-controls={`${link.name.toLowerCase()}-submenu`}
+                      className="text-gray-500 hover:text-primary transition"
+                      onClick={() =>
+                        setOpenDropdown((current) =>
+                          current === link.path ? null : link.path
+                        )
+                      }
+                    >
+                      <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                    </button>
+                  )}
+                </div>
+
+                {hasChildren && (
+                  <ul
+                    id={`${link.name.toLowerCase()}-submenu`}
+                    className={`absolute left-0 top-full mt-2 min-w-[180px] rounded-lg bg-white shadow-lg border border-slate-200 transition-all duration-200 ${
+                      showChildren
+                        ? "visible opacity-100"
+                        : "invisible opacity-0"
+                    } z-50`}
+                  >
                     {link.children.map((child) => {
                       const isChildActive = pathname === child.path;
                       return (
