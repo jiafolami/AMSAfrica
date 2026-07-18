@@ -3,6 +3,7 @@ export type Slide =
       type: "image";
       src: string;
       alt?: string;
+      objectPosition?: string;
     }
   | {
       type: "image-overlay";
@@ -29,6 +30,7 @@ export const slides: Slide[] = [
     type: "image",
     src: "/images/AMSA_Excos.jpg",
     alt: "AMSA Excos",
+    objectPosition: "center top",
   },
   {
     type: "image",

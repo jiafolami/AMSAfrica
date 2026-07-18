@@ -15,7 +15,11 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    {
+      name: "About",
+      path: "/about",
+      children: [{ name: "Excos", path: "/about/excos" }],
+    },
     { name: "Progenitor Schools", path: "/members" },
     { name: "Publications", path: "/publications" },
     { name: "News", path: "/news-events" },
@@ -57,19 +61,36 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen }: MobileNavProps) => {
       >
         <ul className="flex flex-col gap-8 pt-12 items-center">
           {navLinks.map((link) => {
-            const isActive = pathname === link.path;
+            const isActive =
+              pathname === link.path ||
+              (link.path !== "/" && pathname.startsWith(link.path));
 
             return (
-              <li key={link.path}>
+              <li key={link.path} className="w-full">
                 <Link
                   href={link.path}
                   className={`text-white font-montserrat text-2xl transition-colors ${
-                    isActive ? "text-white" : ""
+                    isActive ? "text-white font-semibold" : ""
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
+                {link.children && (
+                  <ul className="mt-3 space-y-3 pl-4 border-l border-white/30">
+                    {link.children.map((child) => (
+                      <li key={child.path}>
+                        <Link
+                          href={child.path}
+                          className="text-white text-xl transition-colors hover:text-slate-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {child.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             );
           })}

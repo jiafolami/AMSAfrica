@@ -53,6 +53,7 @@ const Carousel = ({ slides, interval = 5000 }: CarouselProps) => {
           src={slide.src}
           alt={slide.alt ?? "Slide image"}
           className="object-cover brightness-90"
+          style={{ objectPosition: slide.objectPosition ?? "center" }}
         />
       )}
 
