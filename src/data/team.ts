@@ -8,6 +8,13 @@ export type TeamMember = {
 
 export const leadership: TeamMember[] = [
   {
+    name: "Prof Bernice O. Adegbehingbe",
+    role: "President",
+    image: "/images/Prof_Bernice_Adegbehingbe.jpg",
+    description:
+      "Professor/Consultant Opthalmologist. Provost, College of Health Sciences, Obafemi Awolowo University. Head, Glaucoma Services, Obafemi Awolowo University Teaching Hospitals Complex, Ile-Ife, Nigeria.",
+  },
+  {
     name: "Prof Temidayo Ogundiran",
     role: "President",
     institution: "University of Ibadan, Nigeria",
@@ -24,13 +31,6 @@ export const leadership: TeamMember[] = [
     role: "Member",
     institution: "University of Khartoum, Sudan",
     image: "/images/prof-alaadin.jpg",
-  },
-  {
-    name: "Prof Bernice O. Adegbehingbe",
-    role: "President",
-    image: "/images/Prof_Bernice_Adegbehingbe.jpg",
-    description:
-      "Professor/Consultant Opthalmologist. Provost, College of Health Sciences, Obafemi Awolowo University. Head, Glaucoma Services, Obafemi Awolowo University Teaching Hospitals Complex, Ile-Ife, Nigeria.",
   },
   {
     name: "Prof. Damalie Nakanjako",
