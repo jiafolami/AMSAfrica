@@ -30,7 +30,7 @@ const ExcosPage = () => {
                 Image description
               </h2>
               <p className="text-gray-600 leading-7">
-                From left: Prof Jeremiah Madaki (Assistant Treasurer - Nigeria), Prof Jehu Iputo (Adviser - Uganda), Prof Obafunke Denloye (Trustee - Nigeria), Prof Temidayo Ogundiran (Treasurer - Nigeria), Prof Bernice Adegbehingbe (President - Nigeria), Prof E. Oluwabunmi Olaopa (Ex-Officio 1 & Trustee - Nigeria), Prof Allaeldin Hassan Ahmed (Adviser - Sudan), and Prof Lawrence Sherman (Secretary General - Liberia).
+                Professor Bernice O. Adegbehingbe, Professor/Consultant Ophthalmologist; Provost, College of Health Sciences, Obafemi Awolowo University; Head, Glaucoma Services, Obafemi Awolowo University Teaching Hospitals Complex, Ile-Ife, Nigeria; Position - President.
               </p>
             </div>
           </div>

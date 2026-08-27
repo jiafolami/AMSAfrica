@@ -28,7 +28,7 @@ export const leadership: TeamMember[] = [
     name: "Prof Ademola A. Oremosu",
     role: "Member",
     institution: "University of Lagos, Nigeria",
-    image: "/images/prof-ademola.png",
+    image: "/images/Prof_Bernice_Adegbehingbe.jpg",
   },
   {
     name: "Prof. Damalie Nakanjako",
