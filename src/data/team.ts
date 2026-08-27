@@ -25,9 +25,9 @@ export const leadership: TeamMember[] = [
     image: "/images/prof-alaadin.jpg",
   },
   {
-    name: "Prof Ademola A. Oremosu",
-    role: "Member",
-    institution: "University of Lagos, Nigeria",
+    name: "Prof Bernice O. Adegbehingbe",
+    role: "President",
+    institution: "Obafemi Awolowo University, Nigeria",
     image: "/images/Prof_Bernice_Adegbehingbe.jpg",
   },
   {
