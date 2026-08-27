@@ -1,7 +1,7 @@
 export type TeamMember = {
   name: string;
   role: string;
-  institution: string;
+  institution?: string;
   image: string;
   description?: string;
 };
@@ -28,10 +28,9 @@ export const leadership: TeamMember[] = [
   {
     name: "Prof Bernice O. Adegbehingbe",
     role: "President",
-    institution: "Obafemi Awolowo University, Nigeria",
     image: "/images/Prof_Bernice_Adegbehingbe.jpg",
     description:
-      "Professor Bernice O. Adegbehingbe,\nProfessor/Consultant Ophthalmologist\nProvost, College of Health Sciences\nObafemi Awolowo University\nHead, Glaucoma Services, Obafemi Awolowo University Teaching Hospitals Complex, Ile-Ife, Nigeria\nPosition - President",
+      "Professor/Consultant Opthalmologist. Provost, College of Health Sciences, Obafemi Awolowo University. Head, Glaucoma Services, Obafemi Awolowo University Teaching Hospitals Complex, Ile-Ife, Nigeria.",
   },
   {
     name: "Prof. Damalie Nakanjako",

@@ -31,7 +31,9 @@ const ourTeam = () => {
               <div className="p-6">
                 <h3 className="text-gray-900 mb-1 font-bold">{leader.name}</h3>
                 <p className="text-primary mb-2">{leader.role}</p>
-                <p className="text-gray-600">{leader.institution}</p>
+                {leader.institution && (
+                  <p className="text-gray-600">{leader.institution}</p>
+                )}
                 {leader.description && (
                   <p className="mt-3 text-sm leading-relaxed text-gray-600 whitespace-pre-line">
                     {leader.description}
