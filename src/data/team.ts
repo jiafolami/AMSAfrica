@@ -3,6 +3,7 @@ export type TeamMember = {
   role: string;
   institution?: string;
   image: string;
+  imageClassName?: string;
   description?: string;
 };
 
@@ -18,6 +19,7 @@ export const leadership: TeamMember[] = [
     name: "Prof Alfred E. Yawson",
     role: "Vice President",
     image: "/images/Prof_Alfred_Yawson.jpg",
+    imageClassName: "px-4 pt-8 pb-0",
     description:
       "Professor of Community Health,\nProvost, College of Health Sciences,\nUniversity of Ghana",
   },
@@ -40,6 +42,7 @@ export const leadership: TeamMember[] = [
     name: "Professor Simon J. Yiltok",
     role: "Trustee",
     image: "/images/Prof_Simon_J.Yiltok.jpg",
+    imageClassName: "px-4 pt-8 pb-0",
   },
   {
     name: "Professor Obafunke O. Denloye",

@@ -26,7 +26,9 @@ const ourTeam = () => {
                 alt={leader.name}
                 width={400}
                 height={400}
-                className="w-full h-96 bg-gray-100 object-contain object-center"
+                className={`w-full h-96 bg-gray-100 object-contain object-center ${
+                  leader.imageClassName ?? ""
+                }`}
               />
               <div className="p-6">
                 <h3 className="text-gray-900 mb-1 font-bold">{leader.name}</h3>
