@@ -58,7 +58,7 @@ export const leadership: TeamMember[] = [
     role: "Trustee and Ex-Officio",
     image: "/images/Prof_Oluwabunmi_Olaopa.jpg",
     description:
-    "Professor of Surgery, Urology Division, College of Medicine, \nUniversity of Ibadan, Nigeria. \n\nPresident-elect, World Federation of Medical Education.",
+    "Professor of Surgery, Urology Division, College of Medicine, University of Ibadan, Nigeria. \nPresident-Elect, World Federation of Medical Education.",
   },
   {
     name: "Professor Jehu E. Iputo",
