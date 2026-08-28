@@ -25,6 +25,8 @@ export const leadership: TeamMember[] = [
     role: "Vice-President",
     institution: "University of Ghana ",
     image: "/images/prof-alfred.jpg",
+    description:
+      "Professor of Community Health,\nProvost, College of Health Sciences,\nUniversity of Ghana",
   },
   {
     name: "Prof Alaadin Ahmed",
