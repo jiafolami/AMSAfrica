@@ -16,7 +16,7 @@ export const leadership: TeamMember[] = [
   },
   {
     name: "Prof Temidayo Ogundiran",
-    role: "President",
+    role: "Treasurer",
     institution: "University of Ibadan, Nigeria",
     image: "/images/prof-temidayo.jpg",
   },
