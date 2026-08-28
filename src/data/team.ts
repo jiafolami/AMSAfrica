@@ -35,7 +35,7 @@ export const leadership: TeamMember[] = [
     role: "Treasurer",
     image: "/images/Prof_Temidayo_Ogundiran.jpg",
     description:
-      "Department of Surgery, College of Medicine,\nUniversity of Ibadan, Nigeria.",
+      "Provost, College of Medicine University of Ibadan,\nUniversity of Ibadan, Nigeria.",
   },
   {
     name: "Professor Jeremiah Madaki",
@@ -57,6 +57,8 @@ export const leadership: TeamMember[] = [
     name: "Professor Oluwabunmi Olapade-Olaopa",
     role: "Trustee and Ex-Officio",
     image: "/images/Prof_Oluwabunmi_Olaopa.jpg",
+    description:
+    "Professor of Surgery, Urology Division, College of Medicine, \nUniversity of Ibadan, Nigeria. \n\nPresident-elect, World Federation of Medical Education.",
   },
   {
     name: "Professor Jehu E. Iputo",
