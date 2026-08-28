@@ -27,11 +27,15 @@ export const leadership: TeamMember[] = [
     name: "Associate Professor Lawrence M. Sherman",
     role: "Secretary General",
     image: "/images/Associate_Professor_Lawrence_Sherman.jpg",
+    description:
+      "Dean and Associate Professor of Surgery\nA.M. Dogliotti School of Medicine,\nUniversity of Liberia.",
   },
   {
     name: "Professor Temidayo O. Ogundiran",
     role: "Treasurer",
     image: "/images/Prof_Temidayo_Ogundiran.jpg",
+    description:
+      "Department of Surgery, College of Medicine,\nUniversity of Ibadan, Nigeria.",
   },
   {
     name: "Professor Jeremiah Madaki",
