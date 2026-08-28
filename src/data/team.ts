@@ -35,23 +35,29 @@ export const leadership: TeamMember[] = [
     role: "Treasurer",
     image: "/images/Prof_Temidayo_Ogundiran.jpg",
     description:
-      "Provost, College of Medicine University of Ibadan,\nUniversity of Ibadan, Nigeria.",
+      "Professor of Surgery, Faculty of Clinical Sciences, University of Ibadan. \nProvost, College of Medicine University of Ibadan,\nUniversity of Ibadan, Nigeria.",
   },
   {
     name: "Professor Jeremiah Madaki",
     role: "Assistant Treasurer",
     image: "/images/Prof_Jeremiah_Madaki.jpg",
+    description:
+      "Professor of Family Medicine.\nProvost, College of Health Sciences, University of Jos, Nigeria",
   },
   {
     name: "Professor Simon J. Yiltok",
     role: "Trustee",
     image: "/images/Prof_Simon_J.Yiltok.jpg",
     imageClassName: "px-4 pt-8 pb-0",
+    description:
+      "Department of Surgery, Faculty of Clinical Sciences, College of Health Sciences, University of Jos, Nigeria.",
   },
   {
     name: "Professor Obafunke O. Denloye",
     role: "Trustee",
     image: "/images/Prof_Obafunke_Denloye.jpg",
+    description:
+      "Professor of Paediatric Dentistry, Department of Child Oral Health, College of Medicine, University of Ibadan.",
   },
   {
     name: "Professor Oluwabunmi Olapade-Olaopa",
@@ -64,10 +70,14 @@ export const leadership: TeamMember[] = [
     name: "Professor Jehu E. Iputo",
     role: "Adviser",
     image: "/images/Prof_Jehu_Iputo.jpg",
+    description:
+      "Professor of Physiology, Head of Health Professions Education, Busitema University of Uganda.",
   },
   {
     name: "Professor Allaeldin Hassan Ahmed",
     role: "Adviser",
     image: "/images/Allaeldin_Hassan_Ahmed.jpg",
+    description:
+      "Professor of Medicine and Pulmonology, Faculty of Medicine, University of Khartoum, Kartoum, Sudan.",
   },
 ];
