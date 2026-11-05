@@ -24,8 +24,8 @@ export const recentEvents: NewsEvent[] = [
     title: "AMSA at the 2026 United Nations General Assembly",
     date: "September 22–26, 2026",
     location: "United Nations Headquarters, New York",
-    image: "/images/unga-2026-7.jpg",
-    imageAlt: "Participants gather at the High-Level African-Caribbean session during UNGA 2026.",
+    image: "/images/UNGCNC_pic9.jpg",
+    imageAlt: "AMSA President Prof. Bernice Adegbehingbe at the UNGA 2026 event.",
     summary:
       "AMSA President Prof. Bernice Adegbehingbe represented the Association at UNGA 2026, advancing AMSA’s commitment to fit-for-purpose medical graduates and stronger partnerships across Africa and the Caribbean.",
     sessions: ["Support Africa Side Event", "High-Level African-Caribbean Session", "SDG 3: Good Health and Well-being"],
