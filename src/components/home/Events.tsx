@@ -8,7 +8,16 @@ const Events = () => {
 
   if (!event) return null;
 
-  const galleryPreview = event.photos.slice(1, 4);
+  const galleryPreview = event.photos.slice(1, 4).map((photo) =>
+    photo.src === "/images/unga-2026-3.jpg"
+      ? {
+          ...photo,
+          src: "/images/UNGCNC_pic9.jpg",
+          alt: "AMSA President Prof. Bernice Adegbehingbe with other participants at a UNGA 2026 session.",
+          fit: "contain" as const,
+        }
+      : photo,
+  );
 
   return (
     <section className="bg-gray-50 py-20" aria-labelledby="events-heading">
@@ -87,12 +96,12 @@ const Events = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-1 border-t border-white bg-white sm:gap-2">
+          <div className="grid grid-cols-1 gap-1 border-t border-white bg-white sm:grid-cols-3 sm:gap-2">
             {galleryPreview.map((photo) => (
               <Link
                 key={photo.src}
                 href={`/news-events/${event.slug}`}
-                className="group relative aspect-[4/3] overflow-hidden bg-gray-100 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-primary"
+                className="group relative aspect-video overflow-hidden bg-gray-100 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-primary"
                 aria-label={`View ${photo.alt} in the event recap`}
               >
                 <Image
@@ -101,6 +110,7 @@ const Events = () => {
                   fill
                   sizes="(min-width: 1024px) 33vw, 33vw"
                   className={photo.fit === "contain" ? "bg-gray-200 object-contain" : "object-cover transition-transform duration-500 group-hover:scale-105"}
+                  style={{ objectPosition: photo.src === "/images/unga-2026-5.jpg" ? "bottom" : undefined }}
                 />
               </Link>
             ))}
