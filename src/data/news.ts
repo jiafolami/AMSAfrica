@@ -49,9 +49,9 @@ export const recentEvents: NewsEvent[] = [
         caption: "Participants engage in the high-level discussion.",
       },
       {
-        src: "/images/unga-2026-4.jpg",
-        alt: "Audience members and speakers gather for a session in New York.",
-        caption: "A session brings together participants in New York.",
+        src: "/images/UNGCNC_pic9b.jpg",
+        alt: "Prof. Bernice Adegbehingbe and fellow participants pose at the UNGA 2026 session.",
+        caption: "AMSA President Prof. Bernice Adegbehingbe with fellow session participants.",
       },
       {
         src: "/images/unga-2026-5.jpg",
