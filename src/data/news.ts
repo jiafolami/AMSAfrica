@@ -49,9 +49,9 @@ export const recentEvents: NewsEvent[] = [
         caption: "Participants engage in the high-level discussion.",
       },
       {
-        src: "/images/UNGCNC_pic9b.jpg",
-        alt: "Prof. Bernice Adegbehingbe and fellow participants pose at the UNGA 2026 session.",
-        caption: "AMSA President Prof. Bernice Adegbehingbe with fellow session participants.",
+        src: "/images/UNGCNC_pic8.jpg",
+        alt: "A group of medical and health leaders meet at an office in New York.",
+        caption: "Medical and health leaders meet during the New York visit.",
       },
       {
         src: "/images/unga-2026-5.jpg",
@@ -66,7 +66,7 @@ export const recentEvents: NewsEvent[] = [
       {
         src: "/images/unga-2026-7.jpg",
         alt: "A group of participants gather beneath the session backdrop.",
-        caption: "Participants gather beneath the session backdrop.",
+        caption: "After a session by the Lagos State Governor, Mr. Babajide Sanwo-Olu",
       },
     ],
   },
