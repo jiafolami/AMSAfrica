@@ -84,13 +84,13 @@ export default function UNGA2026Story() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {event.photos.map((photo) => (
               <figure key={photo.src} className="overflow-hidden rounded-2xl bg-gray-100">
-                <div className="relative aspect-[4/3]">
+                <div className={`relative aspect-[4/3] ${photo.fit === "contain" ? "bg-gray-200" : ""}`}>
                   <Image
                     src={photo.src}
                     alt={photo.alt}
                     fill
                     sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 100vw"
-                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    className={photo.fit === "contain" ? "object-contain" : "object-cover transition-transform duration-500 hover:scale-105"}
                   />
                 </div>
                 <figcaption className="px-4 py-3 text-sm text-gray-600">

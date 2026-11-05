@@ -2,6 +2,7 @@ export type EventPhoto = {
   src: string;
   alt: string;
   caption: string;
+  fit?: "contain" | "cover";
 };
 
 export type NewsEvent = {
@@ -50,8 +51,9 @@ export const recentEvents: NewsEvent[] = [
       },
       {
         src: "/images/UNGCNC_pic8.jpg",
-        alt: "A group of medical and health leaders meet at an office in New York.",
-        caption: "Medical and health leaders meet during the New York visit.",
+        alt: "Ambassador Akinremi Bolaji, HRM Oba Dokun Thompson, Dr. Marisa Nimrod, Ambassador Martin Adamu, Prof. Bernice Adegbehingbe, and Prof. E. Oluwabunmi Olapade-Olaopa together in New York.",
+        caption: "L-R, Ambassador Akinremi Bolaji; HRM Oba Dokun Thompson; Dr. Marisa Nimrod (CEO WFME); Ambassador Martin Adamu (Minister to Nigeria's Permanent Representative to the United Nations); Professor Bernice Adegbehingbe (President, AMSA), Professor E. Oluwabunmi Olapade-Olaopa (President WFME)",
+        fit: "contain",
       },
       {
         src: "/images/unga-2026-5.jpg",
@@ -61,7 +63,7 @@ export const recentEvents: NewsEvent[] = [
       {
         src: "/images/unga-2026-6.jpg",
         alt: "Four participants pose together at the African-Caribbean session.",
-        caption: "Participants at the African-Caribbean session.",
+        caption: "AMSA President with the Executive Director of World Federation of Medical Educaion (WFME), and UN representatives in West Africa and the Caribbeans",
       },
       {
         src: "/images/unga-2026-7.jpg",

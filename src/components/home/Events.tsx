@@ -100,7 +100,7 @@ const Events = () => {
                   alt={photo.alt}
                   fill
                   sizes="(min-width: 1024px) 33vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={photo.fit === "contain" ? "bg-gray-200 object-contain" : "object-cover transition-transform duration-500 group-hover:scale-105"}
                 />
               </Link>
             ))}
